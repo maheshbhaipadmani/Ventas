@@ -1,4 +1,22 @@
-	// Home page form validation
+// <!-- navbar script -->
+
+  document.querySelector('.icon-scroll').addEventListener('click', function () {
+    var targetSection = document.getElementById('trialSection');
+
+    if (targetSection) {
+      var targetPosition = targetSection.offsetTop;
+      console.log("Scrolling to position: " + targetPosition);
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error("Target section with ID 'services' not found.");
+    }
+  });
+
+  
+  // Home page form validation
   document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('bookingForm');
     const formSections = document.querySelector('.form-sections');

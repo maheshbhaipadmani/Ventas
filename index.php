@@ -26,7 +26,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
           <div class="d-grid d-md-flex flex-row gap-2 justify-content-center dont-worry-btn-margin mb-3">
             <div>
               <span class="btn3 dont-worry-btn">Don't Worry </span>
-
             </div>
             <div class="icon-scroll-container" id="section1">
               <div class="icon-scroll"></div>
@@ -573,7 +572,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     <div class="card bg-soft-blue mb-10 LeadTracking">
       <div class="card-body">
         <div class="row gy-10 align-items-center">
-          <div class="col-lg-4 order-lg-2 offset-lg-1">
+          <div class="col-lg-4 order-lg-2">
             <div class="post-category mb-3 text-blue">Leads in Stages</div>
             <h3 class="h1 post-title mb-3">Centralized Lead Analysis</h3>
             <p>
@@ -711,7 +710,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
           Achieve more with our <span class="text-gradient gradient-7">all-inclusive packages!</span>
         </h3>
         <span class="pricing-switcher-wrapper switcher">
-          <p class="mb-0 ps-3">Yearly packages</p>
+          <p class="mb-0 ps-3">Yearly Packages</p>
         </span>
       </div>
     </div>
@@ -725,7 +724,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         <div class="col-md-6 col-lg-4 offset-lg-0">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#b7b7b7" viewBox="0 0 384 512">
+              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#D4D2DD" viewBox="0 0 384 512">
                 <path
                   d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
               </svg>
@@ -757,7 +756,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         <div class="col-md-6 col-lg-4 popular">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" fill="#e8ae4c" viewBox="0 0 384 512">
+              <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" fill="#F7E17C" viewBox="0 0 384 512">
                 <path
                   d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
               </svg>
@@ -789,7 +788,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
           <div class="pricing card shadow-lg text-center">
             <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#df9f75" viewBox="0 0 384 512">
+              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="#CB9A7C" viewBox="0 0 384 512">
                 <path
                   d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
               </svg>
@@ -852,138 +851,139 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
 <!-- faq section -->
 <section class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 bg-content pt-10 pb-15 mt-7"
-  style="background-color: #f8e7ec;">
-  <div class="blur-bg" style="left: 10%; top: 20%;"></div>
-  <div class="blur-bg" style="left: 60%; top: 40%;"></div>
-  <div class="container pt-lg-0 position-relative home-faq-section">
-    <div class="row">
-      <div class="col-xl-11 col-xxl-10 mx-auto">
-        <div class="position-relative">
-          <img src="./assets/img/svg/doodle7.svg" class="h-7 position-absolute d-none d-lg-block" data-delay="1800"
-            style="top: 13%; right: 3%;" alt="doodle7" />
-          <h4 class="fs-16 text-uppercase text-muted mb-3 text-center">
-            FAQ'S
-          </h4>
-          <h3 class="display-3 mb-11 px-lg-8 px-xl-11 text-center">
-            If you don't see an
-            <span class="text-gradient gradient-7">answer</span> to your
-            question, you can send us an email from our contact form.
-          </h3>
-        </div>
-        <div class="row">
-          <!-- Left Accordion -->
-          <div class="col-lg-6 mb-0">
-            <div id="accordion-1" class="accordion-wrapper">
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-1-1">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1"
-                    aria-expanded="false" aria-controls="accordion-collapse-1-1">
-                    What is Ventas?
-                  </button>
-                </div>
-                <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1"
-                  data-bs-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>
-                      Ventas is a CRM designed for exporters and traders in
-                      the ceramic industry, helping you manage leads, track
-                      client interactions, and close deals efficiently.
-                    </p>
+    style="background-color: #f8e7ec;">
+    <div class="blur-bg" style="left: 10%; top: 20%;"></div>
+    <div class="blur-bg" style="left: 60%; top: 40%;"></div>
+    <div class="container pt-lg-0 position-relative home-faq-section">
+      <div class="row">
+        <div class="col-xl-11 col-xxl-10 mx-auto">
+          <div class="position-relative">
+            <img src="./assets/img/svg/doodle7.svg" class="h-7 position-absolute d-none d-lg-block" data-delay="1800"
+              style="top: 13%; right: 3%;" alt="doodle7" />
+            <h4 class="fs-16 text-uppercase text-muted mb-3 text-center">
+              FAQ'S
+            </h4>
+            <h3 class="display-3 mb-11 px-lg-8 px-xl-11 text-center">
+              If you don't see an
+              <span class="text-gradient gradient-7">answer</span> to your
+              question, you can send us an email from our contact form.
+            </h3>
+          </div>
+          <div class="row">
+            <!-- Left Accordion -->
+            <div class="col-lg-6 mb-0">
+              <div id="accordion-1" class="accordion-wrapper">
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-1-1">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-1"
+                      aria-expanded="false" aria-controls="accordion-collapse-1-1">
+                      What is Ventas?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-1-1" class="collapse" aria-labelledby="accordion-heading-1-1"
+                    data-bs-parent="#accordion-1">
+                    <div class="card-body">
+                      <p>
+                        Ventas is a CRM designed for exporters and traders in
+                        the ceramic industry, helping you manage leads, track
+                        client interactions, and close deals efficiently.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-1-2">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2"
-                    aria-expanded="false" aria-controls="accordion-collapse-1-2">
-                    How will Ventas benefit my business?
-                  </button>
-                </div>
-                <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2"
-                  data-bs-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>
-                      It centralizes your lead management, streamlines
-                      follow-ups, and enhances customer relationships,
-                      ultimately improving your sales pipeline.
-                    </p>
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-1-2">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-2"
+                      aria-expanded="false" aria-controls="accordion-collapse-1-2">
+                      How will Ventas benefit my business?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-1-2" class="collapse" aria-labelledby="accordion-heading-1-2"
+                    data-bs-parent="#accordion-1">
+                    <div class="card-body">
+                      <p>
+                        It centralizes your lead management, streamlines
+                        follow-ups, and enhances customer relationships,
+                        ultimately improving your sales pipeline.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-1-3">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3"
-                    aria-expanded="false" aria-controls="accordion-collapse-1-3">
-                    How secure is Ventas?
-                  </button>
-                </div>
-                <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3"
-                  data-bs-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>
-                      Your data is our priority. Ventas uses the latest
-                      security protocols, including data encryption and
-                      regular backups, to keep your information safe.
-                    </p>
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-1-3">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1-3"
+                      aria-expanded="false" aria-controls="accordion-collapse-1-3">
+                      How secure is Ventas?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3"
+                    data-bs-parent="#accordion-1">
+                    <div class="card-body">
+                      <p>
+                        Your data is our priority. Ventas uses the latest
+                        security protocols, including data encryption and
+                        regular backups, to keep your information safe.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Right Accordion -->
-          <div class="col-lg-6">
-            <div id="accordion-2" class="accordion-wrapper">
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-2-1">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1"
-                    aria-expanded="false" aria-controls="accordion-collapse-2-1">
-                    Can I use Ventas on mobile?
-                  </button>
-                </div>
-                <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1"
-                  data-bs-parent="#accordion-2">
-                  <div class="card-body">
-                    <p>
-                      Absolutely! Ventas is optimized for mobile devices,
-                      allowing you to manage your leads and track sales
-                      progress wherever you are.
-                    </p>
+            <!-- Right Accordion -->
+            <div class="col-lg-6">
+              <div id="accordion-2" class="accordion-wrapper">
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-2-1">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-1"
+                      aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                      Can I use Ventas on mobile?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1"
+                    data-bs-parent="#accordion-2">
+                    <div class="card-body">
+                      <p>
+                        Absolutely! Ventas is optimized for mobile devices,
+                        allowing you to manage your leads and track sales
+                        progress wherever you are.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-2-2">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2"
-                    aria-expanded="false" aria-controls="accordion-collapse-2-2">
-                    Is my data secure with Ventas?
-                  </button>
-                </div>
-                <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2"
-                  data-bs-parent="#accordion-2">
-                  <div class="card-body">
-                    <p>
-                      Your data is protected by industry-leading security
-                      protocols, including encryption, regular backups, and
-                      secure cloud storage.
-                    </p>
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-2-2">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2"
+                      aria-expanded="false" aria-controls="accordion-collapse-2-2">
+                      Is my data secure with Ventas?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2"
+                    data-bs-parent="#accordion-2">
+                    <div class="card-body">
+                      <p>
+                        Your data is protected by industry-leading security
+                        protocols, including encryption, regular backups, and
+                        secure cloud storage.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card accordion-item shadow-lg">
-                <div class="card-header" id="accordion-heading-2-3">
-                  <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3"
-                    aria-expanded="false" aria-controls="accordion-collapse-2-3">
-                    How do I get started with Ventas?
-                  </button>
-                </div>
-                <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3"
-                  data-bs-parent="#accordion-2">
-                  <div class="card-body">
-                    <p>
-                      Getting started is simple. Sign up for a free trial or
-                      schedule a demo to explore how Ventas can be tailored
-                      to your business.
-                    </p>
+                <div class="card accordion-item shadow-lg">
+                  <div class="card-header" id="accordion-heading-2-3">
+                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3"
+                      aria-expanded="false" aria-controls="accordion-collapse-2-3">
+                      How do I get started with Ventas?
+                    </button>
+                  </div>
+                  <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3"
+                    data-bs-parent="#accordion-2">
+                    <div class="card-body">
+                      <p>
+                        Getting started is simple. Sign up for a free trial or
+                        schedule a demo to explore how Ventas can be tailored
+                        to your business.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -992,8 +992,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- book now -->
 <section class="booking-section">
@@ -1126,8 +1125,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     </div>
   </div>
 </section>
-
-
 
 <?php
 include __DIR__ . '/assets/A_Layout/Footer/footer.php';

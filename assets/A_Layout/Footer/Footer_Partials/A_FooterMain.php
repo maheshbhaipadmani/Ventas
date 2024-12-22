@@ -4,7 +4,7 @@ echo
 <footer class="modern-footer">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-3 col-md-6 footer-column">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6  col-xl-3 footer-column">
           <h3 class="footer-heading">Ventas</h3>
           <p>
             Transforming lead management for ceramic exporters with innovative
@@ -41,31 +41,39 @@ echo
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-column">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6  col-xl-3 footer-column">
           <h3 class="footer-heading">Get in Touch</h3>
           <div class="contact-info">
-            <span class="contact-icon">
-              <a href="https://www.google.com/maps?q=C-806+Titanium+Business+Park+Divyabhaskar+Press+B%2Fh+nr.+Railway+Under+Bridge+Makarba+Ahmedabad+Gujarat+380051"
-                target="_blank" rel="noopener noreferrer" class="black-link">
-                C-806, Titanium Business Park, Divyabhaskar Press, B/h nr.
-                Railway Under Bridge, Makarba, Ahmedabad, Gujarat 380051
-              </a>
-            </span>
-          </div>
+  <span class="contact-icon">
+    <a href="https://www.google.com/maps?q=C-806+Titanium+Business+Park+Divyabhaskar+Press+B%2Fh+nr.+Railway+Under+Bridge+Makarba+Ahmedabad+Gujarat+380051"
+      target="_blank" rel="noopener noreferrer" class="black-link">
+      <i class="fa-solid fa-location-dot"></i>
+      C-806, Titanium Business Park, Divyabhaskar Press, B/h nr.
+      Railway Under Bridge, Makarba, Ahmedabad, Gujarat 380051
+    </a>
+  </span>
+</div>
 
-          <div class="contact-info">
-            <span>
-              <a href="mailto:info@theventas.com" class="black-link">info@theventas.com</a>
-            </span>
-          </div>
+<div class="contact-info">
+  <span class="contact-icon">
+    <a href="mailto:info@theventas.com" class="black-link">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      info@theventas.com
+    </a>
+  </span>
+</div>
 
-          <div class="contact-info">
-            <span>
-              <a href="tel:+919426842246" class="black-link">+91 96248 42246</a>
-            </span>
-          </div>
+<div class="contact-info">
+  <span class="contact-icon">
+    <a href="tel:+919426842246" class="black-link">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      +91 96248 42246
+    </a>
+  </span>
+</div>
+
         </div>
-        <div class="col-lg-2 col-md-6 footer-column">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6  col-xl-3 footer-column">
           <h3 class="footer-heading">Learn More</h3>
           <ul class="footer-links">
             <li><a href="Home">Home</a></li>
@@ -75,7 +83,7 @@ echo
             <li><a href="SiteMap">Site Map</a></li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6 footer-column">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6  col-xl-3 footer-column">
           <h3 class="footer-heading">Opportunity Awaits</h3>
           <p>
             Boost your business with ease—request a quick callback from our expert team!
