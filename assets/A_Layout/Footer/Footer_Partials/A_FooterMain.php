@@ -88,7 +88,8 @@ echo
           <p>
             Boost your business with ease—request a quick callback from our expert team!
           </p>
-          <form id="footerform" class="newsletter-form mt-4">
+          <form id="footerform" class="newsletter-form mt-4 needs-validation" novalidate>
+          <div class="form-group">
             <input type="tel" class="newsletter-input" placeholder="Phone Number" required id="phonenumberft" />
             <button type="submit" class="btn newsletter-button">Submit</button>
           </form>

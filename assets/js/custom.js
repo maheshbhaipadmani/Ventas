@@ -1,3 +1,6 @@
+// footer form validationKC
+  // Bootstrap validation script
+
 // <!-- navbar script -->
 
   document.querySelector('.icon-scroll').addEventListener('click', function () {
