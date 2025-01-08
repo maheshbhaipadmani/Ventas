@@ -1,7 +1,7 @@
 ﻿<?php
 $Title = "Ventas CRM - Streamline Lead Management for Ceramic Exporters & Traders";
-$MetaDescription = "Happy Home Decor offers premium Chimani Sofas and elegant curtains to transform your living space. Explore stylish designs, quality materials, and unmatched comfort.";
-$MetaKeywords = "Happy Home Decor, Premium Sofas, Chimani Sofas, Elegant Curtains, Modern Curtains, Stylish Sofas, Home Decor Solutions, Living Room Decor, Luxury Home Furnishings";
+$MetaDescription = "Ventas CRM simplifies lead management for ceramic exporters and traders. Streamline your sales process, track leads efficiently, and grow your ceramic business with our tailored CRM solution.";
+$MetaKeywords = "Ventas CRM, lead management, ceramic exporters, ceramic traders, CRM for ceramic industry, streamline lead management, ceramic business CRM, export CRM, ceramic traders software, lead tracking for ceramics";
 ?>
 
 <?php
