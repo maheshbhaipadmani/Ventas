@@ -28,7 +28,7 @@ bookingformemailForm.addEventListener("submit", function (event) {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "PM*Ft7#b2@",
-    ReciverEmail: "info@theventas.com,
+    ReciverEmail: "info@theventas.com",
     Subject: subject,
     Body: `
     <!DOCTYPE html>
