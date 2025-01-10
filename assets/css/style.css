@@ -51167,6 +51167,18 @@ footer [class*=col-] .widget+.widget {
   font-size: 16px;          /* Increase font size for readability */
 }
 
+#contact-feedback{
+    display: none;            /* Hidden by default */
+    padding: 10px 20px 10px 20px;  /* Add some padding for better spacing */
+    border: 2px solid blue;   /* Blue border */
+    border-radius: 5px;       /* Optional: Rounded corners */
+    text-align: center;       /* Center the text horizontally */
+    margin: 10px auto;        /* Center the container and add spacing */
+    width: fit-content;       /* Adjust width to fit content */
+    color: blue;              /* Text color blue for consistency */
+    font-weight: bold;        /* Make the text bold */
+    font-size: 16px;          /* Increase font size for readability */ 
+}
   .icon-scroll {
     width: 24px;
     height: 44px;

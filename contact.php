@@ -67,62 +67,66 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
     <div class="col-lg-7 get-in-touch">
       <h2>Get in Touch</h1>
-        <form id="form">
-          <div class="row">
-            <div class="col-md-6 position-relative">
-              <input required type="text" class="form-control pe-10" placeholder="Name" />
-              <svg class="position-absolute" style="right: 25px; top: 34%; transform: translateY(-50%)"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </div>
-            <div class="col-md-6 position-relative">
-              <input required type="email" class="form-control pe-10" placeholder="Email" />
-              <svg class="position-absolute" style="right: 25px; top: 34%; transform: translateY(-50%)"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 position-relative">
-              <input required type="text" class="form-control pe-10" placeholder="Subject" />
-            </div>
-            <div class="col-md-6 position-relative">
-              <input required type="tel" class="form-control pe-10" placeholder="Phone" />
-              <svg class="position-absolute" style="right: 25px; top: 34%; transform: translateY(-50%)"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-          </div>
-          <div class="position-relative">
-            <input required type="text" class="form-control pe-10" placeholder="Company Name" />
-          </div>
-          <div class="position-relative">
-            <textarea required class="form-control pe-10" placeholder="Description"></textarea>
-          </div>
-          <button type="submit" class="btn-send">
-            Send Message
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
-          <div class="justify-content-center">
-            <p id="contact-feedback"></p>
-          </div>
-        </form>
+      <form id="form" class="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-6 position-relative mb-3">
+      <input type="text" class="form-control pe-10" placeholder="Name" required />
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+    <div class="col-md-6 position-relative mb-3">
+      <input type="email" class="form-control pe-10" placeholder="Email" required />
+      <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 position-relative mb-3">
+      <input type="text" class="form-control pe-10" placeholder="Subject" required />
+      <div class="invalid-feedback">Please enter a subject.</div>
+    </div>
+    <div class="col-md-6 position-relative mb-3">
+      <input type="tel" class="form-control pe-10" placeholder="Phone" required />
+      <div class="invalid-feedback">Please enter a valid phone number.</div>
+    </div>
+  </div>
+  <div class="position-relative mb-3">
+    <input type="text" class="form-control pe-10" placeholder="Company Name" required />
+    <div class="invalid-feedback">Please enter your company name.</div>
+  </div>
+  <div class="position-relative mb-3">
+    <textarea class="form-control pe-10" placeholder="Description" required></textarea>
+    <div class="invalid-feedback">Please enter a description.</div>
+  </div>
+  <button type="submit" class="btn-send">
+    Send Message
+  </button>
+  <div class="justify-content-center mt-3">
+    <p id="contact-feedback"></p>
+  </div>
+</form>
+
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    'use strict';
+
+    window.addEventListener('load', function () {
+      var forms = document.getElementsByClassName('needs-validation');
+
+      Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
 
 <!-- <script>
   const inputField = document.getElementById('newsletterInput');
