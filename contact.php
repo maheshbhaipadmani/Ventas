@@ -117,7 +117,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             </svg>
           </button>
           <div class="justify-content-center">
-            <p id="feedback"></p>
+            <p id="contact-feedback"></p>
           </div>
         </form>
     </div>

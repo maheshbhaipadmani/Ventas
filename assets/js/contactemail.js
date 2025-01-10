@@ -145,7 +145,7 @@ emailForm.addEventListener("submit", function (event) {
 });
 
 function showFeedback(message, classNames) {
-  const feedback = document.getElementById("feedback");
+  const feedback = document.getElementById("contact-feedback");
   feedback.textContent = message;
   feedback.className = classNames;
   setTimeout(() => {
@@ -154,7 +154,7 @@ function showFeedback(message, classNames) {
   }, 3000); // Remove feedback after 3 seconds (3000 milliseconds)
 }
 function showFeedback(message, isSuccess = true) {
-  const feedbackElement = document.getElementById("feedback");
+  const feedbackElement = document.getElementById("contact-feedback");
 
   // Set the message and style
   feedbackElement.innerText = message;
@@ -166,4 +166,4 @@ function showFeedback(message, isSuccess = true) {
   setTimeout(() => {
     feedbackElement.style.display = "none";
   }, 3000);
-}
+} 
