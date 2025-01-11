@@ -617,7 +617,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     <div class="row mb-12">
       <div class="col-xxl-11 mx-auto">
         <div class="row gx-md-8 gy-10 text-center d-flex justify-content-center">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 col-6">
             <div class="svg-bg svg-bg-lg bg-pale-yellow rounded-xl mb-4">
               <div class="svg-inject icon-svg solid text-navy">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-laptop"
@@ -626,13 +626,13 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                     d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
                 </svg>
               </div>
-            </div>
+            </div>  
             <h4 class="fs-20 why-choose-font">
               Ventas is incredibly easy to use
             </h4>
           </div>
 
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 col-6">
             <div class="svg-bg svg-bg-lg bg-pale-green rounded-xl mb-4">
               <div class="svg-inject icon-svg solid text-navy">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
@@ -662,7 +662,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
             </h4>
           </div>
           <div class="row d-flex justify-content-center">
-            <div class="col-md-6 col-lg-4 mt-11">
+            <div class="col-md-6 col-lg-4 col-6 mt-11">
               <div class="svg-bg svg-bg-lg bg-pale-pink rounded-xl mb-4">
                 <div class="svg-inject icon-svg solid text-navy">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
@@ -676,7 +676,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                 Regular updates for continuous improvement
               </h4>
             </div>
-            <div class="col-md-6 col-lg-4 mt-11">
+            <div class="col-md-6 col-lg-4  col-6 mt-11">
               <div class="svg-bg svg-bg-lg bg-pale-violet rounded-xl mb-4">
                 <div class="svg-inject icon-svg solid text-navy">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 245.34">

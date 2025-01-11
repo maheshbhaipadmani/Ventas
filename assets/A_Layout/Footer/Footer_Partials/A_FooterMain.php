@@ -66,7 +66,7 @@ echo
 <div class="contact-info">
   <span class="contact-icon">
     <a href="tel:+919426842246" class="black-link">
-      <i class="fa fa-phone" aria-hidden="true"></i>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i>
       +91 96248 42246
     </a>
   </span>
