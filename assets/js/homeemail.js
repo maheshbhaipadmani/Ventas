@@ -195,7 +195,7 @@
             document.getElementById("phonenumberft").value = "";
 
             // Show success feedback
-            showFeedbackContact("Our team will be in touch soonhfyfffyfdfyffyf !", true);
+            showFeedbackContact("Our team will be in touch soon !", true);
 
           })
           .catch((error) => {
