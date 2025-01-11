@@ -1,4 +1,4 @@
-const emailForm = document.querySelector("form");
+const emailForm = document.querySelector("#contact-form-fill");
 
 // Contact mail start
 emailForm.addEventListener("submit", function (event) {
@@ -109,8 +109,6 @@ emailForm.addEventListener("submit", function (event) {
     `,
   };
 
-  // Debugging in console
-  console.log("Form data:", emailData);
 
   const apiUrl = "./Mail/sendmail.php";
   const headers = {
@@ -125,7 +123,6 @@ emailForm.addEventListener("submit", function (event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Email sent successfully:", data);
       document.querySelector('input[placeholder="Name"]').value = "";
       document.querySelector('input[placeholder="Phone"]').value = "";
       document.querySelector('input[placeholder="Email"]').value = "";
@@ -153,6 +150,7 @@ function showFeedback(message, classNames) {
     feedback.className = ""; // Remove all classes
   }, 3000); // Remove feedback after 3 seconds (3000 milliseconds)
 }
+
 function showFeedback(message, isSuccess = true) {
   const feedbackElement = document.getElementById("contact-feedback");
 
@@ -166,4 +164,4 @@ function showFeedback(message, isSuccess = true) {
   setTimeout(() => {
     feedbackElement.style.display = "none";
   }, 3000);
-} 
+}

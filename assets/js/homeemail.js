@@ -8,20 +8,18 @@
 
       // Gather data from the form - updated selectors to match new HTML
       const phonenumberfooter = document.getElementById("phonenumberft").value;
-     
-      console.log("Phone Number Entered:", phonenumberfooter);
 
 
      if (!/^\d+$/.test(phonenumberfooter)) {
         // Show feedback for non-numeric input
-        showFeedback("Invalid input! Only numbers are allowed.", false);
+        showFeedbackContact("Invalid input! Only numbers are allowed.", false);
         return; // Stop further execution
     }
 
     // Validate if the number exceeds 15 digits
     if (phonenumberfooter.length > 15) {
         // Show feedback for exceeding 15 digits
-        showFeedback("Invalid input! The number should not exceed 15 digits.", false);
+        showFeedbackContact("Invalid input! The number should not exceed 15 digits.", false);
         return; // Stop further execution
     }
 
@@ -177,9 +175,6 @@
       `,
       };
 
-      // Debugging in console
-      console.log("Form data:", emailData);
-
       const apiUrl = "./Mail/sendmail.php";
       const headers = {
           "Content-Type": "application/json",
@@ -193,38 +188,46 @@
       })
           .then((response) => response.json())
           .then((data) => {
-              console.log("Email sent successfully:", data);
               const phonenumberfooter = document.getElementById("phonenumberft").value;
-              showFeedback("Our team will be in touch soon!", "text-primary", true);
+            //   showFeedback("Our team will be in touch soon!", "text-primary", true);
 
               // Clear the input field
             document.getElementById("phonenumberft").value = "";
 
             // Show success feedback
-            showFeedback("Our team will be in touch soon!", true);
+            showFeedbackContact("Our team will be in touch soonhfyfffyfdfyffyf !", true);
 
           })
           .catch((error) => {
               console.error("Error sending email:", error);
-              showFeedback(
+              showFeedbackContact(
                   "Message sending failed. Please try again later.",
                   "text-danger"
               );
           });
   });
-
+  showFeedbackContact(
+    "Message sending failed. Please try again later.",
+    "text-danger"
+);
  
-  function showFeedback(message, isSuccess = true) {
-      const feedbackElement = document.getElementById("feedback");
+  // Get the elements
+  
+  // Function to set the message and style
+  function showFeedbackContact(message, isSuccess) {
+    const feedbackElement = document.getElementById("feedback");
+    const feedbackNumber = document.querySelector(".feedbackNumber"); // Use querySelector for a single element
+    feedbackNumber.innerText = message; // Set the feedback message
+    feedbackNumber.style.color = isSuccess ? "lightblue" : "lightcoral"; // Blue for success, coral for error
+    feedbackNumber.style.borderColor = isSuccess ? "lightblue" : "lightcoral";
+    feedbackNumber.style.display = "block"; // Make it visible
 
-      // Set the message and style
-      feedbackElement.innerText = message;
-      feedbackElement.style.color = isSuccess ? "lightblue" : "lightred"; // Blue for success, red for error
-      feedbackElement.style.borderColor = isSuccess ? "lightblue" : "lightred";
-      feedbackElement.style.display = "block"; // Make it visible
+    // Hide the feedback after 3 seconds
+    setTimeout(() => {
+        feedbackNumber.style.display = "none";
+    }, 3000); // 3 seconds
+}
 
-      // Hide the feedback after 3 seconds
-      setTimeout(() => {
-          feedbackElement.style.display = "none";
-      }, 3000);
-  }
+// Example usage
+showFeedbackContact("Operation Successful!", true); // For success
+// showFeedback("Error occurred!", false); // For error

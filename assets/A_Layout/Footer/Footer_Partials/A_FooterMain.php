@@ -89,12 +89,12 @@ echo
             Boost your business with ease—request a quick callback from our expert team!
           </p>
           <form id="footerform" class="newsletter-form mt-4 needs-validation" novalidate>
-          <div class="form-group">
+            <div class="form-group">
             <input type="tel" class="newsletter-input" placeholder="Phone Number" required id="phonenumberft" />
             <button type="submit" class="btn newsletter-button">Submit</button>
           </form>
 
-          <div id="feedback" style="display: none; font-size: 14px; margin-top: 10px;"></div>
+          <div id="feedback" class="feedbackNumber style="display: none; font-size: 14px; margin-top: 10px;"></div>
         </div>
       </div>
       <div class="copyright">

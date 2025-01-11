@@ -67,7 +67,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
     <div class="col-lg-7 get-in-touch">
       <h2>Get in Touch</h1>
-      <form id="form" class="needs-validation" novalidate>
+      <form id="contact-form-fill" class="needs-validation" novalidate>
   <div class="row">
     <div class="col-md-6 position-relative mb-3">
       <input type="text" class="form-control pe-10" placeholder="Name" required />
@@ -152,7 +152,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
     if (targetSection) {
       var targetPosition = targetSection.offsetTop;
-      console.log("Scrolling to position: " + targetPosition);
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'

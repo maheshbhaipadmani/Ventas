@@ -223,8 +223,6 @@ bookingformemailForm.addEventListener("submit", function (event) {
     `,
   };
 
-  // Debugging in console
-  console.log("Form data:", emailData);
 
   const apiUrl = "./Mail/sendmail.php";
   const headers = {
@@ -239,7 +237,6 @@ bookingformemailForm.addEventListener("submit", function (event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Email sent successfully:", data);
       document.querySelector('input[placeholder="Name"]').value = "";
       document.querySelector('input[placeholder="email"]').value = "";
       document.querySelector('input[placeholder="phone"]').value = "";

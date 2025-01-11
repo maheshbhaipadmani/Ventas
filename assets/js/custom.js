@@ -8,7 +8,6 @@
 
     if (targetSection) {
       var targetPosition = targetSection.offsetTop;
-      console.log("Scrolling to position: " + targetPosition);
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'

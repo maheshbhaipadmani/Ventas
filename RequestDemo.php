@@ -167,7 +167,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
     
       if (targetSection) {
         var targetPosition = targetSection.offsetTop;
-        console.log("Scrolling to position: " + targetPosition);
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth' 
