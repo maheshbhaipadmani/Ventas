@@ -228,6 +228,3 @@
     }, 3000); // 3 seconds
 }
 
-// Example usage
-showFeedbackContact("Operation Successful!", true); // For success
-// showFeedback("Error occurred!", false); // For error
