@@ -13,12 +13,20 @@ emailForm.addEventListener("submit", function (event) {
   const company = document.querySelector('input[placeholder="Company Name"]').value;
   const message = document.querySelector('textarea[placeholder="Description"]').value;
 
+    // Validate the form fields
+    if (!name || !phone || !email || !subject || !company || !message) {
+      showFeedback("Please fill in all the fields.", false);
+      return; // Stop the form from submitting
+    }
+
+    
   // Create email data
   const emailData = {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "PM*Ft7#b2@",
-    ReciverEmail: "info@theventas.com",
+    // ReciverEmail: " info@theventas.com ",
+    ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
     Subject: subject,
     Body: `
      <html>
@@ -115,6 +123,7 @@ emailForm.addEventListener("submit", function (event) {
     "Content-Type": "application/json",
   };
 
+  
   // Sending the email using fetch
   fetch(apiUrl, {
     method: "POST",
@@ -147,21 +156,13 @@ function showFeedback(message, classNames) {
   feedback.className = classNames;
   setTimeout(() => {
     feedback.textContent = "";
-    feedback.className = ""; // Remove all classes
-  }, 3000); // Remove feedback after 3 seconds (3000 milliseconds)
-}
+    feedback.className = ""; 
+  }, 3000); 
 
-function showFeedback(message, isSuccess = true) {
-  const feedbackElement = document.getElementById("contact-feedback");
-
-  // Set the message and style
-  feedbackElement.innerText = message;
-  feedbackElement.style.color = isSuccess ? "blue" : "red"; // Blue for success, red for error
-  feedbackElement.style.borderColor = isSuccess ? "blue" : "red";
-  feedbackElement.style.display = "block"; // Make it visible
 
   // Hide the feedback after 3 seconds
   setTimeout(() => {
     feedbackElement.style.display = "none";
   }, 3000);
 }
+
