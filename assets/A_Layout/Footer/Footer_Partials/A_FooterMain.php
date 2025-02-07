@@ -101,7 +101,7 @@ echo
         <p class="mb-0">© 2024 <span style="background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;"> Ventas </span> Rights Reserved. Powered by <a href="https://theuniqueitsolution.com/"
+    background-clip: text;"> Ventas </span> Rights Reserved. Developed  by <a href="https://theuniqueitsolution.com/"
             target="_blank" style="
     background: linear-gradient(0deg, rgba(1, 157, 224, 1) 0%, rgba(49, 63, 145, 1) 100%);
     -webkit-background-clip: text;

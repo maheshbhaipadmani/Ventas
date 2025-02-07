@@ -160,22 +160,6 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 </section>
 
 
-  <!-- navbar script -->
-    <script>
-      document.querySelector('.icon-scroll').addEventListener('click', function() {
-      var targetSection = document.getElementById('trialSection');
-    
-      if (targetSection) {
-        var targetPosition = targetSection.offsetTop;
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth' 
-        });
-      } else {
-        console.error("Target section with ID 'services' not found.");
-      }
-    });
-    </script>
 
 <?php
 include __DIR__ . '/assets/A_Layout/Footer/footer.php';

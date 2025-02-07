@@ -4,7 +4,7 @@ echo
  
   <!-- JavaScript for Active Class -->
 
-  <script src="./assets/js/custom.js"></script>
+  <script src="./assets/js/custom.js" defer></script>
   <script src="./assets/js/email.js"></script>
   <script src="./assets/js/homeemail.js"></script>
   <script src="./assets/js/contactemail.js"></script>

@@ -30,8 +30,8 @@
       const emailData = {
         Host: "smtp.hostinger.com",
         SenderEmail: "website@theventas.com",
-        SenderEmailPassword: "PM*Ft7#b2@",
-        ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
+        SenderEmailPassword: "R*5kgt|EZ",
+        ReciverEmail: "info@theventas.com",
         Subject: subject,
           Body: `
    <!DOCTYPE html>
@@ -224,4 +224,3 @@
         feedbackNumber.style.display = "none";
     }, 3000); // 3 seconds
 }
-

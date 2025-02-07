@@ -24,9 +24,9 @@ emailForm.addEventListener("submit", function (event) {
   const emailData = {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
-    SenderEmailPassword: "PM*Ft7#b2@",
+    SenderEmailPassword: "R*5kgt|EZ",
     // ReciverEmail: " info@theventas.com ",
-    ReciverEmail: "hitixa.bhuva@theuniqueitsolution.com",
+    ReciverEmail: "info@theventas.com",
     Subject: subject,
     Body: `
      <html>
@@ -162,7 +162,6 @@ function showFeedback(message, classNames) {
 
   // Hide the feedback after 3 seconds
   setTimeout(() => {
-    feedbackElement.style.display = "none";
+    feedback.style.display = "none";
   }, 3000);
 }
-

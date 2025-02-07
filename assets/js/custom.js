@@ -1,51 +1,47 @@
-// footer form validationKC
-  // Bootstrap validation script
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollIcon = document.querySelector('.icon-scroll');
 
-// <!-- navbar script -->
+  if (scrollIcon) {
+    scrollIcon.addEventListener('click', function () {
+      var targetSection = document.getElementById('trialSection');
 
-  document.querySelector('.icon-scroll').addEventListener('click', function () {
-    var targetSection = document.getElementById('trialSection');
-
-    if (targetSection) {
-      var targetPosition = targetSection.offsetTop;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    } else {
-      console.error("Target section with ID 'services' not found.");
-    }
-  });
+      if (targetSection) {
+        var targetPosition = targetSection.offsetTop;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        console.error("Target section with ID 'trialSection' not found.");
+      }
+    });
+  } else {
+    console.error("Element with class 'icon-scroll' not found.");
+  }
+});
 
   
-  // Home page form validation
-  document.addEventListener('DOMContentLoaded', function () {
+
+  document.addEventListener('click', function (event) {
     const form = document.getElementById('bookingForm');
-    const formSections = document.querySelector('.form-sections');
-    const successMessage = document.getElementById('successMessage');
-
-    if (form) { // Check if the form element exists
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        if (form.checkValidity()) {
-          // Hide form and show success message
-          formSections.style.display = 'none';
-          successMessage.style.display = 'block';
-          successMessage.classList.add('animate__animated', 'animate__fadeIn');
-
-          setTimeout(() => {
-            successMessage.style.display = 'none';
-            formSections.style.display = 'block';
-            form.classList.remove('was-validated'); // Reset validation styles
-            form.reset(); // Reset form inputs
-          }, 2000); // Show the success message for 2 seconds
-        }
-
-        form.classList.add('was-validated');
-      });
-    } else {
-      console.error('Form element not found.');
+  
+    if (form && event.target.closest('button[type="submit"]')) {
+      event.preventDefault();
+      event.stopPropagation();
+  
+      if (form.checkValidity()) {
+        document.querySelector('.form-sections').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+  
+        setTimeout(() => {
+          document.getElementById('successMessage').style.display = 'none';
+          document.querySelector('.form-sections').style.display = 'block';
+          form.classList.remove('was-validated');
+          form.reset();
+        }, 2000);
+      }
+  
+      form.classList.add('was-validated');
     }
   });
+  
