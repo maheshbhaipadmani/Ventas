@@ -50596,7 +50596,7 @@ footer [class*=col-] .widget+.widget {
 }
 
 
-.newsletter-button {
+.footerform-newsletter-button {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -50608,7 +50608,7 @@ footer [class*=col-] .widget+.widget {
     transition: all 0.3s ease;
 }
 
-.newsletter-button:hover {
+.footerform-newsletter-button:hover {
     background-color: #357ABD;
     transform: translateX(-2px);
 }

@@ -91,7 +91,7 @@ echo
           <form id="footerform" class="newsletter-form mt-4 needs-validation" novalidate>
             <div class="form-group">
             <input type="tel" class="newsletter-input" placeholder="Phone Number" required id="phonenumberft" />
-            <button type="submit" class="btn newsletter-button">Submit</button>
+            <button type="submit" class="btn footerform-newsletter-button">Submit</button>
           </form>
 
           <div id="feedback" class="feedbackNumber style="display: none; font-size: 14px; margin-top: 10px;"></div>
