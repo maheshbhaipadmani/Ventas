@@ -28,7 +28,7 @@ bookingformemailForm.addEventListener("submit", function (event) {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "R*5kgt|EZ",
-    ReciverEmail: "info@theventas.com",
+    ReciverEmail: "hitixa.bhuva@uniqueconsumerservices.com",
     Subject: subject,
     Body: `
     <!DOCTYPE html>
@@ -244,13 +244,13 @@ bookingformemailForm.addEventListener("submit", function (event) {
       const teamSize = document.querySelector('#teamSize').value; // Correctly get the selected value
       const dateTime = document.querySelector('#dateTime').value;
       document.querySelector('textarea[placeholder="message"]').value = "";
-      showFormFeedback("Message sending failed. Please try again late", "text-primary", true);
+      showFormFeedback("Message sent successfully", "text-primary", true);
 
     })
     .catch((error) => {
       console.error("Error sending email:", error);
       showFormFeedback(
-        "Message sent successfully.",
+        "Message sending failed. Please try again late.",
         "text-danger"
       );
     });

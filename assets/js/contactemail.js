@@ -25,8 +25,8 @@ emailForm.addEventListener("submit", function (event) {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "R*5kgt|EZ",
-    // ReciverEmail: " info@theventas.com ",
-    ReciverEmail: "info@theventas.com",
+    // ReciverEmail: " hitixa.bhuva@uniqueconsumerservices.com ",
+    ReciverEmail: "hitixa.bhuva@uniqueconsumerservices.com",
     Subject: subject,
     Body: `
      <html>
