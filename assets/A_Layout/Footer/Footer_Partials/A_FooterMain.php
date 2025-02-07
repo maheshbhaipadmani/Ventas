@@ -56,9 +56,9 @@ echo
 
 <div class="contact-info">
   <span class="contact-icon">
-    <a href="mailto:hitixa.bhuva@uniqueconsumerservices.com" class="black-link">
+    <a href="mailto:info@theventas.comm" class="black-link">
       <i class="fa fa-envelope" aria-hidden="true"></i>
-      hitixa.bhuva@uniqueconsumerservices.com
+      info@theventas.comm
     </a>
   </span>
 </div>

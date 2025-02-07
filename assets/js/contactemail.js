@@ -158,10 +158,19 @@ function showFeedback(message, classNames) {
     feedback.textContent = "";
     feedback.className = ""; 
   }, 3000); 
-
-
-  // Hide the feedback after 3 seconds
-  setTimeout(() => {
-    feedback.style.display = "none";
-  }, 3000);
 }
+
+  function showFeedback(message, isSuccess = true) {
+    const feedbackElement = document.getElementById("feedback");
+  
+    // Set the message and style
+    feedbackElement.innerText = message;
+    feedbackElement.style.color = isSuccess ? "blue" : "red"; // Blue for success, red for error
+    feedbackElement.style.borderColor = isSuccess ? "blue" : "red";
+    feedbackElement.style.display = "block"; // Make it visible
+  
+    // Hide the feedback after 3 seconds
+    setTimeout(() => {
+      feedbackElement.style.display = "none";
+    }, 3000);
+  }
