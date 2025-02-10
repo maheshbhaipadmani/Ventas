@@ -1,16 +1,16 @@
 
-  // home page mail send footer mail send
-  const footernumberform = document.getElementById("footerform");
+// home page mail send footer mail send
+const footernumberform = document.getElementById("footerform");
 
-  // Contact mail start
-  footernumberform.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting normally
+// Contact mail start
+footernumberform.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-      // Gather data from the form - updated selectors to match new HTML
-      const phonenumberfooter = document.getElementById("phonenumberft").value;
+    // Gather data from the form - updated selectors to match new HTML
+    const phonenumberfooter = document.getElementById("phonenumberft").value;
 
 
-     if (!/^\d+$/.test(phonenumberfooter)) {
+    if (!/^\d+$/.test(phonenumberfooter)) {
         // Show feedback for non-numeric input
         showFeedbackContact("Invalid input! Only numbers are allowed.", false);
         return; // Stop further execution
@@ -23,17 +23,17 @@
         return; // Stop further execution
     }
 
-      // Hardcoded subject
-      const subject = "New Book Demo Inquiry";
+    // Hardcoded subject
+    const subject = "New Book Demo Inquiry";
 
-      // Create email data
-      const emailData = {
+    // Create email data
+    const emailData = {
         Host: "smtp.hostinger.com",
         SenderEmail: "website@theventas.com",
         SenderEmailPassword: "R*5kgt|EZ",
-        ReciverEmail: "hitixa.bhuva@uniqueconsumerservices.com",
+        ReciverEmail: "patelhitixa4439@gmail.com",
         Subject: subject,
-          Body: `
+        Body: `
    <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -173,45 +173,47 @@
 </html>
 
       `,
-      };
+    };
 
-      const apiUrl = "./Mail/sendmail.php";
-      const headers = {
-          "Content-Type": "application/json",
-      };
+    const apiUrl = "./Mail/sendmail.php";
+    const headers = {
+        "Content-Type": "application/json",
+    };
 
-      // Sending the email using fetch
-      fetch(apiUrl, {
-          method: "POST",
-          headers: headers,
-          body: JSON.stringify(emailData),
-      })
-          .then((response) => response.json())
-          .then((data) => {
-              const phonenumberfooter = document.getElementById("phonenumberft").value;
+    // Sending the email using fetch
+    fetch(apiUrl, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(emailData),
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("fdfd", emailData)
+            const phonenumberfooter = document.getElementById("phonenumberft").value;
             //   showFeedback("Our team will be in touch soon!", "text-primary", true);
 
-              // Clear the input field
+            // Clear the input field
             document.getElementById("phonenumberft").value = "";
 
             // Show success feedback
             showFeedbackContact("Our team will be in touch soon !", true);
 
-          })
-          .catch((error) => {
-              console.error("Error sending email:", error);
-              showFeedbackContact(
-                  "Message sending failed. Please try again later.",
-                  "text-danger"
-              );
-          });
-  });
+        })
+        .catch((error) => {
+            console.log("fdfd")
+            console.error("Error sending email:", error);
+            showFeedbackContact(
+                "Message sending failed. Please try again later.",
+                "text-danger"
+            );
+        });
+});
 
- 
-  // Get the elements
-  
-  // Function to set the message and style
-  function showFeedbackContact(message, isSuccess) {
+
+// Get the elements
+
+// Function to set the message and style
+function showFeedbackContact(message, isSuccess) {
     const feedbackElement = document.getElementById("feedback");
     const feedbackNumber = document.querySelector(".feedbackNumber"); // Use querySelector for a single element
     feedbackNumber.innerText = message; // Set the feedback message

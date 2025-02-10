@@ -1,32 +1,37 @@
-const emailForm = document.querySelector("#contact-form-fill");
+
+// home page mail send footer mail send
+const contactform = document.getElementById("contact-form-fill");
 
 // Contact mail start
-emailForm.addEventListener("submit", function (event) {
+contactform.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the form from submitting normally
 
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const company = document.getElementById("company").value.trim();
+  const message = document.getElementById("description").value.trim();
 
-  // Gather data from the form - updated selectors to match new HTML
-  const name = document.querySelector('input[placeholder="Name"]').value;
-  const phone = document.querySelector('input[placeholder="Phone"]').value;
-  const email = document.querySelector('input[placeholder="Email"]').value;
-  const subject = document.querySelector('input[placeholder="Subject"]').value;
-  const company = document.querySelector('input[placeholder="Company Name"]').value;
-  const message = document.querySelector('textarea[placeholder="Description"]').value;
+  console.log("Hello world!");
+  // Validate phone number (only digits allowed)
+  if (!/^\d+$/.test(phone)) {
+    showFeedback("Invalid phone number! Only numbers are allowed.", false);
+    return;
+  }
 
-    // Validate the form fields
-    if (!name || !phone || !email || !subject || !company || !message) {
-      showFeedback("Please fill in all the fields.", false);
-      return; // Stop the form from submitting
-    }
+  // Validate required fields
+  if (!name || !phone || !email || !subject || !company || !message) {
+    showFeedback("Please fill in all the fields.", false);
+    return;
+  }
 
-    
   // Create email data
   const emailData = {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "R*5kgt|EZ",
-    // ReciverEmail: " hitixa.bhuva@uniqueconsumerservices.com ",
-    ReciverEmail: "hitixa.bhuva@uniqueconsumerservices.com",
+    ReciverEmail: "patelhitixa4439@gmail.com",
     Subject: subject,
     Body: `
      <html>
@@ -117,13 +122,12 @@ emailForm.addEventListener("submit", function (event) {
     `,
   };
 
-
   const apiUrl = "./Mail/sendmail.php";
   const headers = {
     "Content-Type": "application/json",
   };
 
-  
+  console.log("hhhhhhhhhhhh")
   // Sending the email using fetch
   fetch(apiUrl, {
     method: "POST",
@@ -132,45 +136,39 @@ emailForm.addEventListener("submit", function (event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      document.querySelector('input[placeholder="Name"]').value = "";
-      document.querySelector('input[placeholder="Phone"]').value = "";
-      document.querySelector('input[placeholder="Email"]').value = "";
-      document.querySelector('input[placeholder="Subject"]').value = "";
-      document.querySelector('input[placeholder="Company Name"]').value = "";
-      document.querySelector('textarea[placeholder="Description"]').value = "";
-      showFeedback("Message sent successfully", "text-primary", true);
 
+      console.log("ssssssssssss")
+      console.log("Server Response:", data);
+      // Clear form fields
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("company").value = "";
+      document.getElementById("description").value = "";
+
+      console.log("7Hello world!");
+      // Show success feedback
+      showFeedback("Message sent successfully", true);
     })
     .catch((error) => {
+      console.log("ffffffffffffff")
       console.error("Error sending email:", error);
-      showFeedback(
-        "Message sending failed. Please try again later.",
-        "text-danger"
-      );
+      showFeedback("Message sending failed. Please try again later.", false);
     });
 });
 
-function showFeedback(message, classNames) {
-  const feedback = document.getElementById("contact-feedback");
-  feedback.textContent = message;
-  feedback.className = classNames;
-  setTimeout(() => {
-    feedback.textContent = "";
-    feedback.className = ""; 
-  }, 3000); 
-}
 
-  function showFeedback(message, isSuccess = true) {
-    const feedbackElement = document.getElementById("feedback");
-  
-    // Set the message and style
-    feedbackElement.innerText = message;
-    feedbackElement.style.color = isSuccess ? "blue" : "red"; // Blue for success, red for error
-    feedbackElement.style.borderColor = isSuccess ? "blue" : "red";
-    feedbackElement.style.display = "block"; // Make it visible
-  
-    // Hide the feedback after 3 seconds
-    setTimeout(() => {
-      feedbackElement.style.display = "none";
-    }, 3000);
-  }
+// Function to show feedback
+function showFeedback(message, isSuccess = true) {
+  const feedbackElement = document.getElementById("feedback");
+  feedbackElement.innerText = message;
+  feedbackElement.style.color = isSuccess ? "blue" : "red"; // Blue for success, red for error
+  feedbackElement.style.borderColor = isSuccess ? "blue" : "red";
+  feedbackElement.style.display = "block"; // Make it visible
+
+  // Hide feedback after 3 seconds
+  setTimeout(() => {
+    feedbackElement.style.display = "none";
+  }, 3000);
+}

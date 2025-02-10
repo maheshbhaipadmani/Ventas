@@ -5,7 +5,7 @@ class SendMail
 {
     public $SenderEmail = "website@theventas.com";
     public $SenderEmailPassword = "R*5kgt|EZ";
-    public $ReciverEmail = "hitixa.bhuva@uniqueconsumerservices.com";
+    public $ReciverEmail = "patelhitixa4439@gmail.com";
     public $Subject = "";
     public $Body = "hello";
 
@@ -15,14 +15,14 @@ class SendMail
         $subject = isset($inputData['Subject']) ? $inputData['Subject'] : '';
         $body = isset($inputData['Body']) ? $inputData['Body'] : '';
 
-        
+
         $mail = new PHPMailer();
-        $mail->SMTPDebug = 0; // Change to 3 for detailed debug output
+        $mail->SMTPDebug = 2; // Change to 3 for detailed debug output
         $mail->isSMTP();
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
+        $mail->SMTPSecure = 'ssl';
         $mail->Host = "smtp.hostinger.com";
-        $mail->Port = 587;
+        $mail->Port = 465;
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->Username = $this->SenderEmail;
@@ -33,7 +33,6 @@ class SendMail
         $mail->addAddress($this->ReciverEmail);
 
 
-     
         // Optional: Configure SSL options
         $mail->SMTPOptions = [
             'ssl' => [

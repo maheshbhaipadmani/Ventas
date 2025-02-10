@@ -28,7 +28,7 @@ bookingformemailForm.addEventListener("submit", function (event) {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "R*5kgt|EZ",
-    ReciverEmail: "hitixa.bhuva@uniqueconsumerservices.com",
+    ReciverEmail: "patelhitixa4439@gmail.com",
     Subject: subject,
     Body: `
     <!DOCTYPE html>

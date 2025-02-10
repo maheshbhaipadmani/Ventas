@@ -44,7 +44,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
                 d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686" />
             </svg>
           </i>
-          <div>hitixa.bhuva@uniqueconsumerservices.com</div>
+          <div>patelhitixa4439@gmail.commmmm</div>
         </div>
         <div class="info-item">
           <i>
@@ -67,43 +67,44 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
 
     <div class="col-lg-7 get-in-touch">
       <h2>Get in Touch</h1>
-      <form id="contact-form-fill" class="needs-validation" novalidate>
-  <div class="row">
-    <div class="col-md-6 position-relative mb-3">
-      <input type="text" class="form-control pe-10" placeholder="Name" required />
-      <div class="invalid-feedback">Please enter your name.</div>
-    </div>
-    <div class="col-md-6 position-relative mb-3">
-      <input type="email" class="form-control pe-10" placeholder="Email" required />
-      <div class="invalid-feedback">Please enter a valid email.</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 position-relative mb-3">
-      <input type="text" class="form-control pe-10" placeholder="Subject" required />
-      <div class="invalid-feedback">Please enter a subject.</div>
-    </div>
-    <div class="col-md-6 position-relative mb-3">
-      <input type="tel" class="form-control pe-10" placeholder="Phone" required />
-      <div class="invalid-feedback">Please enter a valid phone number.</div>
-    </div>
-  </div>
-  <div class="position-relative mb-3">
-    <input type="text" class="form-control pe-10" placeholder="Company Name" required />
-    <div class="invalid-feedback">Please enter your company name.</div>
-  </div>
-  <div class="position-relative mb-3">
-    <textarea class="form-control pe-10" placeholder="Description" required></textarea>
-    <div class="invalid-feedback">Please enter a description.</div>
-  </div>
-  <button type="submit" class="btn-send">
-    Send Message
-  </button>
-  
-  <div class="justify-content-center mt-3">
-    <p id="contact-feedback"></p>
-  </div>
-</form>
+        <form id="contact-form-fill" class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 position-relative mb-3">
+              <input type="text" id="name" class="form-control pe-10" placeholder="Name" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6 position-relative mb-3">
+              <input type="email" id="email" class="form-control pe-10" placeholder="Email" required />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 position-relative mb-3">
+              <input type="text" id="subject" class="form-control pe-10" placeholder="Subject" required />
+              <div class="invalid-feedback">Please enter a subject.</div>
+            </div>
+            <div class="col-md-6 position-relative mb-3">
+              <input type="tel" id="phone" class="form-control pe-10" placeholder="Phone" required />
+              <div class="invalid-feedback">Please enter a valid phone number.</div>
+            </div>
+          </div>
+          <div class="position-relative mb-3">
+            <input type="text" id="company" class="form-control pe-10" placeholder="Company Name" required />
+            <div class="invalid-feedback">Please enter your company name.</div>
+          </div>
+          <div class="position-relative mb-3">
+            <textarea id="description" class="form-control pe-10" placeholder="Description" required></textarea>
+            <div class="invalid-feedback">Please enter a description.</div>
+          </div>
+          <button type="submit" class="btn-send">
+            Send Message
+          </button>
+
+          <div class="justify-content-center mt-3">
+            <p id="contact-feedback"></p>
+          </div>
+        </form>
+
 
     </div>
   </div>
