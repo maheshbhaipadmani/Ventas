@@ -31,7 +31,7 @@ contactform.addEventListener("submit", function (event) {
     Host: "smtp.hostinger.com",
     SenderEmail: "website@theventas.com",
     SenderEmailPassword: "R*5kgt|EZ",
-    ReciverEmail: "patelhitixa4439@gmail.com",
+    ReciverEmail: "info@theventas.com",
     Subject: subject,
     Body: `
      <html>
