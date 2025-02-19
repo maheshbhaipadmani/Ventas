@@ -736,13 +736,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
               </div>
               <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
                 <li>
-                  <i class="uil uil-check"></i><span><strong>Users: </strong>4 (1 Admin + 30 Team
-                    Members)</span>
-                </li>
-                <li>
-                  <i class="uil uil-check"></i><span><strong>Leads Management: </strong> Up to 6,000 Leads
-                    API Access
-                  </span>
+                  <i class="uil uil-check"></i><span><strong>Users: </strong>4 User Account</span>
                 </li>
                 <li>
                   <i class="uil uil-check"></i><span><strong>Features: </strong> All Features Included!
@@ -768,11 +762,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
               </div>
               <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
                 <li>
-                  <i class="uil uil-check"></i><span><strong>Users: </strong> 9 (1 Admin + 8 Team Members)
-                  </span>
-                </li>
-                <li>
-                  <i class="uil uil-check"></i><span><strong>Leads Management: </strong> Up to 15,000 Leads
+                  <i class="uil uil-check"></i><span><strong>Users: </strong>8 User Account
                   </span>
                 </li>
                 <li>
@@ -800,8 +790,7 @@ include __DIR__ . '/assets/A_Layout/Header/header.php';
               </div>
               <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
                 <li>
-                  <i class="uil uil-check"></i><span><strong>Users:</strong>13 (1 Admin + 12 Team
-                    Members)</span>
+                  <i class="uil uil-check"></i><span><strong>Users:</strong>12 User Account</span>
                 </li>
                 <li>
                   <i class="uil uil-check"></i><span><strong>Leads Management:</strong> Up to 6,000 Leads
