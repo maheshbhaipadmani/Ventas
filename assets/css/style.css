@@ -50596,7 +50596,7 @@ footer [class*=col-] .widget+.widget {
 }
 
 
-.newsletter-button {
+/* .newsletter-button {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -50606,8 +50606,18 @@ footer [class*=col-] .widget+.widget {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+} */
+.newsletter-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px 25px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3sease;
 }
-
 .newsletter-button:hover {
     background-color: #357ABD;
     transform: translateX(-2px);
