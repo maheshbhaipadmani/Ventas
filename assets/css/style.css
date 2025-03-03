@@ -50617,6 +50617,7 @@ footer [class*=col-] .widget+.widget {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3sease;
+    background-image: linear-gradient(135deg, #3f78e0, var(--secondary-color));
 }
 .newsletter-button:hover {
     background-color: #357ABD;
