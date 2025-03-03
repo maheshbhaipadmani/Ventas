@@ -94,7 +94,7 @@ echo
             <button type="submit" class="newsletter-button">Submit</button>
           </form>
 
-          <div id="feedback" class="feedbackNumber style="display: none; font-size: 14px; margin-top: 10px;"></div>
+          <div id="feedback1" class="feedbackNumber style="display: none; font-size: 14px; margin-top: 10px;"></div>
         </div>
       </div>
       <div class="copyright">
